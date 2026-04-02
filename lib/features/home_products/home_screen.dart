@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'widgets/product_card.dart';
-import '../orders_profile/admin_product_list_screen.dart'; // Admin Product Management
-import '../orders_profile/admin_orders_screen.dart';       // Admin All Orders
-import '../orders_profile/orders_screen.dart';             // Customer My Orders
-import '../auth/welcome_screen.dart';                      // For Sign Out
+import '../orders_profile/admin_product_list_screen.dart'; // AdminProductListScreen
+import '../orders_profile/admin_orders_screen.dart';       // AdminOrdersScreen
+import '../orders_profile/orders_screen.dart';             // MyOrdersScreen
+import '../auth/welcome_screen.dart';                     // For Sign Out
 
 class HomeScreen extends StatelessWidget {
   final bool isAdmin;
@@ -125,24 +125,24 @@ class HomeScreen extends StatelessWidget {
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(20.0),
+                    const Padding(
+                      padding: EdgeInsets.all(20.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
+                          Text(
                             'Cosmetics',
                             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                           ),
-                          const SizedBox(height: 20),
+                          SizedBox(height: 20),
                           
                           // These would typically be mapped from your product list
-                          const ProductCard(
+                          ProductCard(
                             title: 'Kera-Treat Hair Mask',
                             price: '999',
                             imagePath: 'assets/images/product_mask.png',
                           ),
-                          const ProductCard(
+                          ProductCard(
                             title: 'Berry Tint',
                             price: '900',
                             imagePath: 'assets/images/product_tint.png',

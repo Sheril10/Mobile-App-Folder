@@ -145,7 +145,7 @@ class _AdminProductListScreenState extends State<AdminProductListScreen> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(15),
-        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 5)],
+        boxShadow: const [BoxShadow(color: Colors.black12, blurRadius: 5)],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -191,14 +191,14 @@ class _AdminProductListScreenState extends State<AdminProductListScreen> {
     );
   }
 
-  Widget _header() => Padding(
-    padding: const EdgeInsets.all(15),
+  Widget _header() => const Padding(
+    padding: EdgeInsets.all(15),
     child: Row(children: [
-      const Text("The\nElegance.", style: TextStyle(fontWeight: FontWeight.bold)),
-      const Spacer(),
-      const Icon(Icons.search),
-      const SizedBox(width: 15),
-      const Icon(Icons.menu),
+      Text("The\nElegance.", style: TextStyle(fontWeight: FontWeight.bold)),
+      Spacer(),
+      Icon(Icons.search),
+      SizedBox(width: 15),
+      Icon(Icons.menu),
     ]),
   );
 
@@ -206,6 +206,6 @@ class _AdminProductListScreenState extends State<AdminProductListScreen> {
     width: double.infinity,
     padding: const EdgeInsets.all(15),
     color: const Color(0xFFD9D9D9),
-    child: const Text('© 2026 TheElegance. All Rights Reserved.', textAlign: TextAlign.center, style: TextStyle(fontSize: 10)),
+    child: const Text('© 2026 TheElegance. All Rights Reserved.', textAlign: TextAlign.center, style: const TextStyle(fontSize: 10)),
   );
 }

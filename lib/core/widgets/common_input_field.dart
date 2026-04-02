@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 
 class CommonInputField extends StatelessWidget {
   final String label;
+  final String? hint; // This was missing!
   final bool isPassword;
-  final TextEditingController? controller; // Add this line
+  final TextEditingController? controller;
 
   const CommonInputField({
     super.key,
     required this.label,
+    this.hint, // Add this here
     this.isPassword = false,
-    this.controller, // Add this line
+    this.controller,
   });
 
   @override
@@ -23,10 +25,11 @@ class CommonInputField extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         TextField(
-          controller: controller, // Add this line
+          controller: controller,
           obscureText: isPassword,
           style: const TextStyle(color: Colors.black),
           decoration: InputDecoration(
+            hintText: hint, // And use it here
             filled: true,
             fillColor: const Color(0xFFD9D9D9),
             contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),

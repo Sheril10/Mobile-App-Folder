@@ -19,8 +19,15 @@ class ProductListScreen extends StatelessWidget {
         actions: [
           IconButton(icon: const Icon(Icons.search, color: Colors.black), onPressed: () {}),
           IconButton(
-            icon: const Icon(Icons.shopping_cart_outlined, color: Colors.black), 
-            onPressed: () => CartOverlay.show(context),
+            icon: const Icon(Icons.shopping_cart_outlined, color: Colors.black),
+            onPressed: () {
+              showModalBottomSheet(
+                context: context,
+                isScrollControlled: true,
+                backgroundColor: Colors.transparent,
+                builder: (_) => const CartOverlay(),
+              );
+            },
           ),
           IconButton(
             icon: const Icon(Icons.person_outline, color: Colors.black), 
@@ -65,7 +72,7 @@ class ProductListScreen extends StatelessWidget {
                   child: ProductCard(
                     title: isEven ? "Kera-Treat Hair Mask" : "Berry Tint",
                     price: isEven ? "999" : "800",
-                    imageUrl: isEven 
+                    imagePath: isEven 
                         ? "assets/images/product_mask.png" 
                         : "assets/images/product_tint.png",
                   ),

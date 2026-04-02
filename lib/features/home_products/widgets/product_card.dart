@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 import '../../cart_checkout/cart_overlay.dart';
-import '../../product_details/product_details_screen.dart'; // Added Import
+import '../../product_details/product_details_screen.dart';
 
 class ProductCard extends StatelessWidget {
   final String title;
   final String price;
-  final String imagePath;
+  final String imagePath; // Keep this name
 
   const ProductCard({
     super.key,
     required this.title,
     required this.price,
-    required this.imagePath,
+    required this.imagePath, // Keep this name
   });
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      // --- NEW NAVIGATION TO DETAILS ---
       onTap: () {
         Navigator.push(
           context,
@@ -41,7 +40,12 @@ class ProductCard extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: const BorderRadius.vertical(top: Radius.circular(25)),
-              child: Image.asset(imagePath, fit: BoxFit.cover, width: double.infinity, height: 400),
+              child: Image.asset(
+                imagePath, // Use imagePath here
+                fit: BoxFit.cover,
+                width: double.infinity,
+                height: 400,
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
@@ -58,7 +62,10 @@ class ProductCard extends StatelessWidget {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      showDialog(context: context, builder: (context) => const CartOverlay());
+                      showDialog(
+                        context: context, 
+                        builder: (context) => const CartOverlay()
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xFFE0E0E0),
