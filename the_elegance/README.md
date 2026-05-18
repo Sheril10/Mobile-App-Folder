@@ -1,8 +1,11 @@
-# the_elegance figma link 
+# The Elegance App
+A premium, modern E-Commerce mobile application built using Flutter and Dart. The application offers a tailored shopping experience for customers and a comprehensive administrative dashboard for catalog and order management, fully backed by Firebase Cloud Services and Cloudinary.
+
+# Figma link 
 https://www.figma.com/design/tunvc5u5UhkQeNfZUh9IXM/The-Elegance-App?node-id=0-1&t=uXlslX4QGvDgoxED-1
 
-A new Flutter project.
-
+# Welcome Screen,Storefront (Light),Storefront (Dark)
+`` ,`` ,`` 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
