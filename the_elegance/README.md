@@ -4,18 +4,6 @@ A premium, modern E-Commerce mobile application built using Flutter and Dart. Th
 # Figma link 
 https://www.figma.com/design/tunvc5u5UhkQeNfZUh9IXM/The-Elegance-App?node-id=0-1&t=uXlslX4QGvDgoxED-1
 
-## 📱 App Preview
-
-| Welcome Screen | Storefront (Light) | Storefront (Dark) |
-| :---: | :---: | :---: |
-| <img src="screenshots/welcome.png" width="200" alt="Welcome Screen"/> | <img src="screenshots/home_light.png" width="200" alt="Home Light"/> | <img src="screenshots/home_dark.png" width="200" alt="Home Dark"/> |
-
-| Interactive Cart Overlay | Smart Checkout Workflow | Admin Dashboard |
-| :---: | :---: | :---: |
-| <img src="screenshots/cart_overlay.png" width="200" alt="Cart Overlay"/> | <img src="screenshots/checkout.png" width="200" alt="Checkout Screen"/> | <img src="screenshots/admin_products.png" width="200" alt="Admin Products"/> |
-
-**Note:** `screenshots/` naam ka ek folder apne project ki root directory mein banayein aur usme upar diye gaye names (`welcome.png`, `home_light.png`, etc.) se images save karein taake woh yahan display ho sakein.
-
 ## ✨ Features
 
 ### 👤 Customer Experience
